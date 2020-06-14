@@ -62,6 +62,7 @@ var fight = function(enemyName) {
       window.alert(playerName + ' still has ' + playerHealth + ' health left.');
     }
   }
+}
 // function to start a new game
 var startGame = function() {
  // reset player stats
@@ -84,13 +85,11 @@ var startGame = function() {
       window.alert("You have lost your robot in battle! Game Over!");
       break;
     }
-      // function to end the entire game
-  var endGame = (function) {
-    window.alert("The game has now ended. Let's see how you did!");
-  };
+  }
 
   // play again
   startGame()
 };
+
 // start the game when the page loads
 startGame();
