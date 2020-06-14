@@ -70,9 +70,6 @@ var startGame = function() {
     // if player is still alive, player wins!
     if (playerHealth > 0) {
       window.alert("Great job, you've survived the game! You now have a score of " + playerMoney + ".");
-    } 
-    else {
-      window.alert("You've lost your robot in battle.");
     }
   }
  // reset player stats
@@ -97,7 +94,8 @@ var startGame = function() {
       break;
     }
   }
-
+// after loop ends, player is either out of health or enemies to fight, so run the endGame function
+endGame();
 //ask player if they'd like to play again
 var playAgainConfirm = window.confirm("Would you like to play again?")
 
