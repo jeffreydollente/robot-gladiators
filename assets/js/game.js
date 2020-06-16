@@ -62,6 +62,7 @@ for (var i = 0; i < enemyInfo.length; i++) {
   if (playerInfo.health > 0) {
     // let user know what round they are in, remember that arrays start at 0
     window.alert("Welcome to Robot Gladiators! Round " + (i + 1));
+    debugger;
 // pick new ememy to fight based on the index of the enemy.names array
     var pickedEnemyObj = enemyInfo[i];
 // reset enemy.health before starting a new fight
@@ -144,8 +145,16 @@ if (playAgainConfirm) {
             break;
   }
 };
+
+var getPlayerName = function() {
+  var name = "";
+  while (name === ""  || name === null) {
+    name = prompt("What is your robot's name?");
+  }
+};
+
 var playerInfo = {
-  name: window.prompt("What is your robot's name?"),
+  name: getPlayerName(),
   health: 100,
   attack: 10,
   money: 10,
@@ -183,22 +192,14 @@ var enemyInfo = [
   {
     name: "Roborto",
     attack: randomNumber(10, 14)
-    shield: {
-      type: "wood",
-      strength: 10
-    }
   },
   {
     name: "Amy Android",
     attack: randomNumber(10, 14)
-    shield: {
-      type: "sword",
-    }
   },
   {
     name: "Robo Trumble",
     attack: randomNumber(10, 14)
-    shield: "hammer",
   }
 ];
 console.log(enemyInfo);
