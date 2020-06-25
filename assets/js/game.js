@@ -182,7 +182,7 @@ playerInfo.reset();
 var enemyInfo = [
   {
     name: "Roborto",
-    attack: randomNumber(10, 14)
+    attack: randomNumber(10, 14),
     shield: {
       type: "wood",
       strength: 10
@@ -190,14 +190,14 @@ var enemyInfo = [
   },
   {
     name: "Amy Android",
-    attack: randomNumber(10, 14)
+    attack: randomNumber(10, 14),
     shield: {
       type: "sword",
     }
   },
   {
     name: "Robo Trumble",
-    attack: randomNumber(10, 14)
+    attack: randomNumber(10, 14),
     shield: "hammer",
   }
 ];
